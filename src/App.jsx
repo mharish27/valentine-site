@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import "./App.css";
 import Baymax from "./Baymax";
+import ValentineWeek from "./ValentineWeek";
 
 function clamp(n, min, max) {
   return Math.max(min, Math.min(max, n));
@@ -13,6 +14,7 @@ function randInt(min, max) {
 export default function App() {
   const buttonAreaRef = useRef(null);
   const noBtnRef = useRef(null);
+  const [pickedDay, setPickedDay] = useState(null);
 
   const [accepted, setAccepted] = useState(false);
   const [noPos, setNoPos] = useState({ x: 0, y: 0 });
@@ -182,7 +184,7 @@ export default function App() {
           </div>
         )}
       </div>
-
+        <ValentineWeek />
       <footer className="footer">Built with React. Make it yours ✨</footer>
     </div>
   );
