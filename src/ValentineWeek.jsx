@@ -44,7 +44,7 @@ import { Link } from "react-router-dom";
 
 const DAYS = [
   { id: "rose", title: "ROSE", date: "FEB 7", day: "SAT", icon: "🌹", to: "/days/rose", enabled: true },
-  { id: "propose", title: "PROPOSE", date: "FEB 8", day: "SUN", icon: "💍", enabled: false },
+  { id: "propose", title: "PROPOSE", date: "FEB 8", day: "SUN", icon: "💍", to: "/days/propose", enabled: true },
   { id: "chocolate", title: "CHOCOLATE", date: "FEB 9", day: "MON", icon: "🍫", enabled: false },
   { id: "teddy", title: "TEDDY", date: "FEB 10", day: "TUE", icon: "🧸", enabled: false },
   { id: "promise", title: "PROMISE", date: "FEB 11", day: "WED", icon: "💞", enabled: false },
