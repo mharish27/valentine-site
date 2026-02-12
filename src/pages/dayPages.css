@@ -180,3 +180,21 @@
     animation: none !important;
   }
 }
+
+/* --- Chocolate Day tweaks --- */
+.chocoShell {
+  position: relative;
+  overflow: hidden;
+}
+
+/* content above float layer */
+.chocoShell > *:not(.floatLayer) {
+  position: relative;
+  z-index: 1;
+}
+
+.chocoImageWrap {
+  margin-top: 16px;
+  min-height: 220px;
+}
+
